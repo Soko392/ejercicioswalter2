@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Sueldo</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Calculadora de Sueldo</h1>
+
+        <!-- Problema 2.1 -->
+        <div class="problema">
+            <h2>Problema 2.1</h2>
+            <label for="sueldo1">Ingrese el sueldo:</label>
+            <input type="number" id="sueldo1">
+            <button onclick="calcularSueldo1()">Calcular</button>
+            <p>Nuevo sueldo: <span id="resultado1"></span></p>
+        </div>
+
+        <!-- Problema 2.2 -->
+        <div class="problema">
+            <h2>Problema 2.2</h2>
+            <label for="sueldo2">Ingrese el sueldo:</label>
+            <input type="number" id="sueldo2">
+            <button onclick="calcularSueldo2()">Calcular</button>
+            <p>Nuevo sueldo: <span id="resultado2"></span></p>
+        </div>
+
+        <!-- Problema 2.3 -->
+        <div class="problema">
+            <h2>Problema 2.3</h2>
+            <label for="categoria">Seleccione la categoría:</label>
+            <select id="categoria">
+                <option value="1">Categoría 1 (15%)</option>
+                <option value="2">Categoría 2 (12%)</option>
+                <option value="3">Categoría 3 (10%)</option>
+                <option value="4">Categoría 4 (8%)</option>
+            </select>
+            <label for="sueldo3">Ingrese el sueldo:</label>
+            <input type="number" id="sueldo3">
+            <button onclick="calcularSueldo3()">Calcular</button>
+            <p>Nuevo sueldo: <span id="resultado3"></span></p>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
